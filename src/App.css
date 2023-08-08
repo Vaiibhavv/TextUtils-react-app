@@ -1,6 +1,7 @@
 body
 {
   background-color: rgba(78, 78, 166, 0.468);
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
 .scrollable-dropdown {
@@ -8,3 +9,8 @@ body
   overflow-y: scroll;
   max-height: 20px;
 }
+.mainHeading
+{
+  font-weight: bolder;
+}
+

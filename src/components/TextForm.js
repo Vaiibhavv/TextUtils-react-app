@@ -78,11 +78,7 @@ export default function TextForm(props) {
     return parseFloat(time.toFixed(2));
   };
   // apply font families
-  const func = () => {
-    let usefont = document.getElementById("inputtxt");
-    usefont.style.fontFamily = "Times New Roman";
-    setText(usefont.value);
-  };
+  
 
   // --------------------------------------------------------------------------------------
   return (
@@ -94,7 +90,7 @@ export default function TextForm(props) {
       <div>
         <div className="form-group">
           <label htmlFor="inputtxt">
-            <h5>Type or copy paste your example</h5>
+            <h5 className="mainHeading">Type or copy paste your example</h5>
           </label>
           <div className="row">
             <div className="col-lg-6">
@@ -189,14 +185,7 @@ export default function TextForm(props) {
             Remove-space
           </button>
 
-          <button
-            disabled={text.length === 0}
-            type="button"
-            className="btn btn-secondary py-0 mx-2 btn-sm"
-            onClick={func}
-          >
-            Times new
-          </button>
+          
         </div>
 
         <h5>Text Summary</h5>
@@ -208,7 +197,6 @@ export default function TextForm(props) {
       </div>
     </div>
   );
-  //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
 }
 
 // -----------------------------------------------------------------------------------

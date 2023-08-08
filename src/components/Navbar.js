@@ -36,10 +36,10 @@ export default function Navbar(props) {
           </ul>
           
           <div className={`form-check form-switch text-${props.mode==='dark'?'light':'dark'}`}>
+          <label className="form-check-label mr-5 mx-0" htmlFor="mySwitch">Dark mode</label>
           <input className="form-check-input"  type="checkbox" onClick={props.darkBtn} id="mySwitch" name="darkmode" value="yes" />
-          <label className="form-check-label" htmlFor="mySwitch">Dark Mode</label>
-          </div>
 
+          </div>
           {/* <form className="form-inline my-2 my-lg-0">
             <input
               className="form-control mr-sm-2 py-0"
@@ -57,7 +57,7 @@ export default function Navbar(props) {
   )
 }
 // Type of the title and about section  should be string and 
-Navbar.prototype= {title:PropTypes.string, about:PropTypes.string}
+Navbar.propTypes= {title:PropTypes.string, about:PropTypes.string}
 
 // if no jsx is added in the title and about section then by default the below line will be added.
 Navbar.defaultProps={title:"Set title", about:"add about us"}
